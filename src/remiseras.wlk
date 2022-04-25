@@ -3,81 +3,46 @@ import cooperativa.*
 
 object roxana
 	{
-var valorKm = 
 
 	method precioPorViaje(clienta, kms)
 		{
-		
-		}
-		
-	method 
-		{
-		
-		}
-		
+		return clienta.valorDelKm() * kms
+		}	
 	}
 	
 object gabriela 
 	{
-var valorKm = 
 
 	method precioPorViaje(clienta, kms)
 		{
-		
+		return (clienta.valorDelKm() * 20 / 100) * kms
 		}
-		
-	method 
-		{
-		
-		}	
-		
 	}
 	
 object mariela
 	{
-var valorKm = 
 
 	method precioPorViaje(clienta, kms)
 		{
-		
+		return (clienta.valorDelKm() * kms).max(50)
 		}
-		
-	method 
-		{
-		
-		}
-		
 	}
 	
 object juana
 	{
-var valorKm = 
 
 	method precioPorViaje(clienta, kms)
 		{
-		
+		if (kms <= 8) {return 100} else {return 200}
 		}
-	
-	method 
-		{
-		
-		}
-	
 	}
 	
 object lucia
 	{
-var valorKm = 
-var remplazada = roxana
+var remiseraRemplazada = roxana
 
 	method precioPorViaje(clienta, kms)
 		{
-		
+		return remplazada.precioPorViaje(clienta, kms)
 		}
-	
-	method 
-		{
-		
-		}	
-	
 	}
