@@ -78,7 +78,7 @@ El objeto `oficina` debe entender estos mensajes:
 - `cambiarSegundoRemiseraPor(remisera)`: cambia la remisera de segunda opción por el que se indica.
 - `intercambiarRemiseras()`: intercambia las remiseras de primera y segunda opción. O sea, la que era 
 primera pasa a segunda, y viceversa.
-- `remiseraElegidaParaViaje(cliente, kms)`: devuelve la remisera que corresponde asignar a un viaje, 
+- `remiseraElegidaParaViaje(clienta, kms)`: devuelve la remisera que corresponde asignar a un viaje, 
 dados el cliente y la cantidad de kilómetros.
   El criterio es el siguiente: si para ese viaje, el precio de la segunda remisera es menor al de la 
   primera con una diferencia de más de 30 pesos, entonces se elige la segunda remisera; si no, 

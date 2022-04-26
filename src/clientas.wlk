@@ -13,18 +13,35 @@ const valorKm = 18
 
 object anaMaria
 	{
-var valorKm = if (estabilidadEconomica == true) {return 30} else {return 25}
-var estabilidadEconomica = true 
+var valorKm
+var estabilidadEconomica
+	
+	method buenaEconomia(situacion)
+		{
+		estabilidadEconomica = situacion
+		}
 	
 	method valorDelKm()
 		{
-		return valorKm
+		if (estabilidadEconomica == true)
+			{
+			valorKm = 30
+			}
+		else
+			{
+			valorKm = 25
+			}
 		}
 	}
 
 object teresa
 	{
-var valorKm = 22
+var valorKm
+
+	method nuevoValorDelKm(precioKm)
+		{
+		valorKm = precioKm
+		}
 	
 	method valorDelKm()
 		{
@@ -34,11 +51,15 @@ var valorKm = 22
 
 object melina
 	{
-var empleadora = ludmila
-var valorKm = empleadora.valorDelKm() - 3
+var empleadora
+
+	method nuevaJefaDeMelina(clienta)
+		{
+		empleadora = clienta
+		}
 	
 	method valorDelKm()
 		{
-		return valorKm
+		return empleadora.valorDelKm() - 3
 		}
 	}

@@ -33,6 +33,16 @@ var primeraRemiseraAnterior
 		
 	method remiseraElegidaParaViaje(clienta, kms)
 		{
-		
+		if (segundaRemisera.precioPorViaje(clienta, kms) <
+			primeraRemisera.precioPorViaje(clienta, kms) and 
+			(segundaRemisera.precioPorViaje(clienta, kms) -
+			primeraRemisera.precioPorViaje(clienta, kms)).abs() > 30)
+			{
+			return segundaRemisera	
+			}
+		else
+			{
+			return primeraRemisera
+			}
 		}
 	}

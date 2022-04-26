@@ -1,0 +1,27 @@
+import clientas.*
+import remiseras.*
+
+test "viaje de 10 km"
+	{
+	anaMaria.buenaEconomia(true)
+	anaMaria.valorDelKm()
+	teresa.nuevoValorDelKm(22)
+	melina.nuevaJefaDeMelina(ludmila)
+	
+	assert.that(roxana.precioPorViaje(ludmila, 10) == 180)
+	assert.that(roxana.precioPorViaje(anaMaria, 10) == 300)
+	assert.that(roxana.precioPorViaje(teresa, 10) == 220)
+	assert.that(roxana.precioPorViaje(melina, 10) == 177)
+	assert.that(gabriela.precioPorViaje(ludmila, 10) == 216)
+	assert.that(gabriela.precioPorViaje(anaMaria, 10) == 360)
+	assert.that(gabriela.precioPorViaje(teresa, 10) == 264)
+	assert.that(gabriela.precioPorViaje(melina, 10) == 213)
+	assert.that(mariela.precioPorViaje(ludmila, 10) == 180)
+	assert.that(mariela.precioPorViaje(anaMaria, 10) == 300)
+	assert.that(mariela.precioPorViaje(teresa, 10) == 220)
+	assert.that(mariela.precioPorViaje(melina, 10) == 177)
+	assert.that(juana.precioPorViaje(ludmila, 10) == 200)
+	assert.that(juana.precioPorViaje(anaMaria, 10) == 200)
+	assert.that(juana.precioPorViaje(teresa, 10) == 200)
+	assert.that(juana.precioPorViaje(melina, 10) == 197)
+	}

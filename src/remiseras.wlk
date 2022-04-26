@@ -39,10 +39,15 @@ object juana
 	
 object lucia
 	{
-var remiseraRemplazada = roxana
+var remiseraRemplazada
+
+	method luciaRemplazaA(remisera)
+		{
+		remiseraRemplazada = remisera
+		}
 
 	method precioPorViaje(clienta, kms)
 		{
-		return remplazada.precioPorViaje(clienta, kms)
+		return remiseraRemplazada.precioPorViaje(clienta, kms)
 		}
 	}
