@@ -5,7 +5,7 @@ object oficina
 	{
 var primeraRemisera
 var segundaRemisera
-var primeraRemiseraAnterior
+/* var primeraRemiseraAnterior este atributo esta de más */
 
 	method asignarRemiseras(remisera1, remisera2)
 		{
@@ -15,7 +15,7 @@ var primeraRemiseraAnterior
 		
 	method cambiarPrimerRemiserarPor(remisera)
 		{
-		primeraRemiseraAnterior = primeraRemisera
+		
 		primeraRemisera = remisera
 		}
 	
@@ -26,9 +26,8 @@ var primeraRemiseraAnterior
 		
 	method intercambiarRemiseras()
 		{
-		primeraRemiseraAnterior = primeraRemisera
-		primeraRemisera = segundaRemisera
-		segundaRemisera = primeraRemiseraAnterior
+		/* Aca tenias que llamar el método asignarRemiseras(r2,r1) */
+		self.asignarRemiseras(segundaRemisera,primeraRemisera )
 		}
 		
 	method remiseraElegidaParaViaje(clienta, kms)

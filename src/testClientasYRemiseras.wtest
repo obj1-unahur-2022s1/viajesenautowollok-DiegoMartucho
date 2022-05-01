@@ -1,5 +1,11 @@
+/*
+ * Test: Tenes que hacer test independientes por cada objeto
+ * Debes usar assert.equals cuando te tenes que comparar con valores
+ */
+
 import clientas.*
 import remiseras.*
+
 
 test "viaje de 10 km"
 	{

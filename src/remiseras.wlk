@@ -1,3 +1,7 @@
+/*
+ * Remiseras: ojo con la identación de las llaves
+ * Revisa el calculo de precioPorViaje() de gabriela
+ */
 import clientas.*
 import cooperativa.*
 
@@ -13,9 +17,12 @@ object roxana
 object gabriela 
 	{
 
+	/*Esté calculo esta mal
+	 * Recorda que para aumentar un % debes multiplicar por 1.%
+	 */
 	method precioPorViaje(clienta, kms)
 		{
-		return (clienta.valorDelKm() * 20 / 100) * kms
+		return clienta.valorDelKm() * 1.2 * kms
 		}
 	}
 	

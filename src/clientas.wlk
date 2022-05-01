@@ -1,3 +1,8 @@
+/*
+ * Clientas:
+ * OJO: con la identación de las llaves, tenes que ser prolijo para no cometer errores
+ * Revisa el método valorDelKm() de anaMaria que esta mal
+ */
 import remiseras.*
 import cooperativa.*
 
@@ -5,15 +10,17 @@ object ludmila
 	{
 const valorKm = 18 
 
-	method valorDelKm()
-		{
-		return valorKm
-		}
+	/* Te dejo la forma corta de como hacer este método */
+	method valorDelKm() = valorKm
+		
 	}
 
 object anaMaria
+/*
+ * El método valorDelKm() esta mal, debe retornar un valor.No es un método de indicacion
+ */
 	{
-var valorKm
+var valorKm  /*Este atributo esta de más */
 var estabilidadEconomica
 	
 	method buenaEconomia(situacion)
@@ -23,13 +30,17 @@ var estabilidadEconomica
 	
 	method valorDelKm()
 		{
-		if (estabilidadEconomica == true)
+		/* 
+		 * ojo con las comparaciones  estabilidadEconomica == true, no tiene sentido comparar un variable booleana contra true o false
+		 * Te recomiendo que hagas los ejercios miedo al booleano de mumuki
+		 */
+		if (estabilidadEconomica)
 			{
-			valorKm = 30
+			return 30
 			}
 		else
 			{
-			valorKm = 25
+			return 25
 			}
 		}
 	}
